@@ -1,0 +1,203 @@
+﻿/* Custom page CSS
+-------------------------------------------------- */
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #222;
+	color: #fff;
+	text-align: center;
+	font-family: 'Open Sans Condensed', Arial, Verdana, sans-serif;
+	font-weight: 500;
+}
+
+#maincontainer {
+	min-height: 100%;
+	position: relative;
+}
+
+#header {
+	text-align: center;
+	border-bottom: 1px solid #444;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#body {
+	padding: 10px;
+	padding-top: 60px;
+	padding-bottom: 60px; /* Height of the footer */
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px; /* Height of the footer */
+	background: #262626;
+	border-top: 1px solid #656565;
+	letter-spacing: 2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 0.9em;
+}
+
+/* Navigation Styles
+-------------------------------------------------- */
+
+.navbar-header{
+	position:absolute;
+}
+
+
+a.navbar-brand,
+a:hover.navbar-brand,
+a:focus.navbar-brand {
+	text-decoration: none;
+	color: #D00000 !important;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+
+.navbar-nav > li + li {
+	margin-left: 25px !important;
+	padding-bottom: 2px;
+}
+
+.navbar-nav > li > a {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+	font-size: 16px !important;
+	font-weight: bold !important;
+	color: #fff !important; /* IE8 proofing */
+	color: rgba(255,255,255,.75) !important;
+	border-bottom: 2px solid transparent !important;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+	color: rgba(255,255,255,.5) !important;
+	background-color: transparent !important;
+	border-bottom-color: #a9a9a9 !important;
+	border-bottom-color: rgba(208,0,0,.5) !important;
+}
+
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+	color: #fff !important;
+	background-color: transparent !important;
+	border-bottom-color: #D00000 !important;
+}
+
+/* Generic
+-------------------------------------------------- */
+
+.text-muted {
+	padding: 1.1em;
+}
+
+div.divPadTop20 {
+	margin-top: 20px;
+}
+
+div.divPadTop40 {
+	margin-top: 40px;
+}
+
+div.divPadBottom20 {
+	margin-bottom: 20px;
+}
+
+div.divPadBottom40 {
+	margin-bottom: 40px;
+}
+
+h2{
+	font-weight:700;
+}
+
+a,
+a:focus,
+a:hover {
+	color: #D00000;
+}
+
+
+/* Pages
+-------------------------------------------------- */
+
+#intro-div {
+}
+
+#music-div {
+	
+}
+
+.input-style-text, .input-style-email, .input-style-textarea {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	box-shadow: none;
+	background-color: transparent;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.input-style-text, .input-style-email {
+	border: 0;
+	border-radius: 0;
+	border-bottom: 1px solid #fff;
+}
+
+.input-style-textarea {
+	border: 1px solid #fff;
+}
+ 
+.input-style-text:focus, .input-style-email:focus {
+	border: 0;
+	box-shadow: 0 2px 1px -1px #D00000;
+	border-bottom: 1px solid #D00000;
+}
+
+.input-style-textarea:focus {
+	box-shadow: 0 0 5px #D00000;
+	border: 1px solid #D00000;
+}
+
+.icon {
+	color:#fff; 
+	margin-right:0.25em;
+}
+
+.videos {
+    border: outset 2px #fff;
+}
+
+.incolor {
+	color: #D00000 !important;
+}
+
+.font500 {
+	font-weight:500
+}
+
+.font600 {
+	font-weight:600
+}
+
+.font700 {
+	font-weight:700
+}

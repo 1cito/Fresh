@@ -1,0 +1,63 @@
+﻿<div id="contact-div">
+
+	<div class="row">
+		<h2>
+			<i class="icon fa fa-mobile"></i> <span ng-bind="heading"></span>
+		</h2>
+	</div>
+
+	<div class="row divPadTop20">
+		<div class="col-md-12">
+			<ul class="list-inline">
+				<li>
+					<h3><span>Freddy 'Fresh' Cortez</span></h3>
+				</li>
+				<li style="padding-left: 50px; padding-right: 50px;">
+					<h3><a href="mailto:freddy@fresh.com" target="_blank" style="color:#fff">freddy@fresh.com</a></h3>
+				</li>
+				<li>
+					<h3><a href="tel:+17035558888" class="incolor font700">(703) 555-8888</a></h3>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="row divPadTop20">
+		<div class="col-md-12">
+			<p>If you are curious to hear more about what we can offer, do not hesitate to get in touch.<br />Send us a brief message of what you would like and let's start discussing your music needs.</p>
+		</div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-md-12">
+
+			<form>
+				<div class="row divPadTop20">
+					<div class="col-md-6">
+						<input type="text" name="name" placeholder="NAME" class="form-control input-style-text" />
+					</div>
+					<div class="col-md-6">
+						<input type="email" name="email" placeholder="EMAIL" class="form-control input-style-email" />
+					</div>
+				</div>
+
+				<div class="row divPadTop40">
+					<div class="col-md-12">
+						<textarea class="form-control input-style-textarea" rows="4" cols="50" placeholder="MESSAGE"></textarea>
+					</div>
+				</div>
+
+				<div class="row divPadTop40 divPadBottom20">
+					<div class="col-md-12">
+						<button id="send-form" type="submit" class="btn-large btn-danger" name="send-form" ng-click="onSend()" ng-disabled="isProcessing">Send</button>
+					</div>
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+</div>
