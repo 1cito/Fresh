@@ -20,7 +20,7 @@ appMainModule.config(function ($stateProvider, $urlRouterProvider, $locationProv
 	.state('index', {
 		url: baseurl,
 		templateUrl: 'templates/home.html',
-		controller: 'homeViewModel'
+		controller: 'homeController'
 	})
 
     $stateProvider
@@ -28,55 +28,55 @@ appMainModule.config(function ($stateProvider, $urlRouterProvider, $locationProv
 	.state('home', {
 		url: baseurl + 'home',
 		templateUrl: 'templates/home.html',
-		controller: 'homeViewModel'
+		controller: 'homeController'
 	})
 
 	// events
     .state('events', {
         url: baseurl + 'events',
         templateUrl: 'templates/events.html',
-        controller: 'eventsViewModel'
+        controller: 'eventsController'
     })
 
     // bio
     .state('bio', {
         url: baseurl + 'bio',
         templateUrl: 'templates/bio.html',
-        controller: 'bioViewModel'
+        controller: 'bioController'
     })
 		
 	// music
     .state('music', {
     	url: baseurl + 'music',
     	templateUrl: 'templates/music.html',
-    	controller: 'musicViewModel'
+    	controller: 'musicController'
     })
 
 	// photos
     .state('photos', {
     	url: baseurl + 'photos',
     	templateUrl: 'templates/photos.html',
-    	controller: 'photosViewModel'
+    	controller: 'photosController'
     })
 
 	// videos
     .state('videos', {
     	url: baseurl + 'videos',
     	templateUrl: 'templates/videos.html',
-    	controller: 'videosViewModel'
+    	controller: 'videosController'
     })
 
     // contact
     .state('contact', {
     	url: baseurl + 'contact',
     	templateUrl: 'templates/contact.html',
-    	controller: 'contactViewModel'
+    	controller: 'contactController'
     });
 
 });
 
 //----------------------------------------//
-appMainModule.controller("indexViewModel", function ($scope, $http, $location) {
+appMainModule.controller("indexController", function ($scope, $http, $location) {
 
 	// Properties
 	$scope.heading = '';
@@ -84,51 +84,49 @@ appMainModule.controller("indexViewModel", function ($scope, $http, $location) {
 	$scope.headingCaption = $scope.headingCaptionBase;
 	$scope.date = new Date();
 
+	$scope.getNavMenuClass = function (name) {
+		return ($scope.heading.toLowerCase() == name.toLowerCase()) ? 'active' : 'inactive';
+	};
 
 	$scope.$on('pageChange', function (event, menu) {
 		$scope.heading = menu;
 		$scope.headingCaption = $scope.headingCaptionBase + ' - ' + menu;
 
 	});
-
-	$scope.getNavMenuClass = function (name) {
-		return ($scope.heading.toLowerCase() == name.toLowerCase()) ? 'active' : 'inactive';
-	};
-
 });
 
 //----------------------------------------//
-appMainModule.controller("homeViewModel", function ($scope, $http, $location) {
+appMainModule.controller("homeController", function ($scope) {
 	$scope.$emit('pageChange', 'Home');
 });
 
 //----------------------------------------//
-appMainModule.controller("eventsViewModel", function ($scope, $http, $location) {
+appMainModule.controller("eventsController", function ($scope) {
 	$scope.$emit('pageChange', 'Events');
 });
 
 //----------------------------------------//
-appMainModule.controller("bioViewModel", function ($scope, $http, $location) {
+appMainModule.controller("bioController", function ($scope) {
 	$scope.$emit('pageChange', 'Bio');
 });
 
 //----------------------------------------//
-appMainModule.controller("musicViewModel", function ($scope, $http, $location) {
+appMainModule.controller("musicController", function ($scope) {
 	$scope.$emit('pageChange', 'Music');
 });
 
 //----------------------------------------//
-appMainModule.controller("photosViewModel", function ($scope, $http, $location) {
+appMainModule.controller("photosController", function ($scope) {
 	$scope.$emit('pageChange', 'Photos');
 });
 
 //----------------------------------------//
-appMainModule.controller("videosViewModel", function ($scope, $http, $location) {
+appMainModule.controller("videosController", function ($scope) {
 	$scope.$emit('pageChange', 'Videos');
 });
 
 //----------------------------------------//
-appMainModule.controller("contactViewModel", function ($scope, $timeout) {
+appMainModule.controller("contactController", function ($scope, $timeout) {
 	$scope.$emit('pageChange', 'Contact');
 
 	$scope.onSend = function () {
