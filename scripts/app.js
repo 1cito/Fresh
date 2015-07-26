@@ -77,9 +77,12 @@ appMainModule.config(function ($stateProvider, $urlRouterProvider, $locationProv
 
 //----------------------------------------//
 appMainModule.controller("indexViewModel", function ($scope, $http, $location) {
+
+	// Properties
 	$scope.heading = '';
 	$scope.headingCaptionBase = 'DJ Fresh';
 	$scope.headingCaption = $scope.headingCaptionBase;
+	$scope.date = new Date();
 
 
 	$scope.$on('pageChange', function (event, menu) {
