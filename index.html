@@ -66,12 +66,7 @@
 
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li data-ng-class="getNavMenuClass('events')"><a ui-sref="events">EVENTS</a></li>
-						<li data-ng-class="getNavMenuClass('bio')"><a ui-sref="bio">BIO</a></li>
-						<li data-ng-class="getNavMenuClass('music')"><a ui-sref="music">MUSIC</a></li>
-						<li data-ng-class="getNavMenuClass('photos')"><a ui-sref="photos">PHOTOS</a></li>
-						<li data-ng-class="getNavMenuClass('videos')"><a ui-sref="videos">VIDEOS</a></li>
-						<li data-ng-class="getNavMenuClass('contact')"><a ui-sref="contact">CONTACT</a></li>
+						<li ng-repeat="link in navigationLinks" data-ng-class="{active: heading === link.Title}"><a ui-sref="{{link.Id}}">{{link.Name}}</a></li>
 					</ul>
 				</div>
 

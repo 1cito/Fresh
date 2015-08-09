@@ -32,7 +32,7 @@ to prevent collapsing during animation*/
 
 [ui-view].ng-leave {
 	opacity: 1;
-	/*padding-left: 0px;*/
+	padding-left: 0px;
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
@@ -40,8 +40,8 @@ to prevent collapsing during animation*/
 
 [ui-view].ng-leave-active {
 	opacity: 0;
-	/*padding-left: 100px;*/
-	-webkit-transform: translate3d(100px, 0, 0);
-	-moz-transform: translate3d(100px, 0, 0);
-	transform: translate3d(100px, 0, 0);
+	padding-left: 150px;
+	-webkit-transform: translate3d(150px, 0, 0);
+	-moz-transform: translate3d(150px, 0, 0);
+	transform: translate3d(150px, 0, 0);
 }

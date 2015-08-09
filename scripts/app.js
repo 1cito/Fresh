@@ -2,7 +2,7 @@
  *  
  */
 
-//'use strict';
+'use strict';
 
 //----------------------------------------//
 var appMainModule = angular.module('appMain', ['ui.router', 'ngAnimate']);
@@ -84,14 +84,19 @@ appMainModule.controller("indexController", function ($scope, $http, $location) 
 	$scope.headingCaption = $scope.headingCaptionBase;
 	$scope.date = new Date();
 
-	$scope.getNavMenuClass = function (name) {
-		return ($scope.heading.toLowerCase() == name.toLowerCase()) ? 'active' : 'inactive';
-	};
+	$scope.navigationLinks = [
+		{ Id: 'events', Name: 'EVENTS', Title: 'Events' },
+		{ Id: 'bio', Name: 'BIO', Title: 'Bio' },
+		{ Id: 'music', Name: 'MUSIC', Title: 'Music' },
+		{ Id: 'photos', Name: 'PHOTOS', Title: 'Photos' },
+		{ Id: 'videos', Name: 'VIDEOS', Title: 'Videos' },
+		{ Id: 'contact', Name: 'CONTACT', Title: 'Contact' }
+	];
+
 
 	$scope.$on('pageChange', function (event, menu) {
 		$scope.heading = menu;
 		$scope.headingCaption = $scope.headingCaptionBase + ' - ' + menu;
-
 	});
 });
 

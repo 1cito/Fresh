@@ -2,7 +2,7 @@
  *  
  */
 
-//'use strict';
+'use strict';
 
 //----------------------------------------//
 function generate(type, text) {
@@ -37,6 +37,6 @@ function generateInfoMessage(message, seconds) {
 //----------------------------------------//
 $(document).ready(function () {
 
-	generateInfoMessage('Playing in Annandale, VA this Saturday night 7/25. Open bar until 9PM. <a href="http://www.google.com">Come check it out.</a>.', 7000);
+	generateInfoMessage('Playing in the LC this Saturday night. Its ladies night and drink specials until midnight. <a href="http://www.google.com">Come out and bring a friend.</a>.', 7000);
 
 });
