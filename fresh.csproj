@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -114,6 +115,7 @@
     <Content Include="templates\music.html" />
     <Content Include="templates\photos.html" />
     <Content Include="templates\videos.html" />
+    <Content Include="htaccess" />
     <None Include="Web.config">
       <SubType>Designer</SubType>
     </None>
