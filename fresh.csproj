@@ -69,7 +69,7 @@
     <Content Include="scripts\angular\angular-route.min.js" />
     <Content Include="scripts\angular\angular-ui-router.min.js" />
     <Content Include="scripts\angular\angular.min.js" />
-    <Content Include="scripts\app.js" />
+    <Content Include="scripts\application.js" />
     <Content Include="scripts\bootstrap\bootstrap.min.js" />
     <Content Include="scripts\jquery\jquery-2.1.1.min.js" />
     <Content Include="scripts\jquery\jquery-2.1.4.min.js" />
@@ -96,6 +96,7 @@
     <Content Include="scripts\noty\themes\bootstrap.js" />
     <Content Include="scripts\noty\themes\default.js" />
     <Content Include="scripts\noty\themes\relax.js" />
+    <None Include="scripts\_references.js" />
     <Content Include="styles\animate.css" />
     <Content Include="styles\awesome\font-awesome.css" />
     <Content Include="styles\awesome\font-awesome.min.css" />

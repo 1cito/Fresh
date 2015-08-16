@@ -5,9 +5,9 @@
 'use strict';
 
 //----------------------------------------//
-var appMainModule = angular.module('appMain', ['ui.router', 'ngAnimate']);
+var applicationModule = angular.module('applicationModule', ['ui.router', 'ngAnimate']);
 
-appMainModule.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+applicationModule.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
     var baseurl = '/';
 
@@ -76,7 +76,7 @@ appMainModule.config(function ($stateProvider, $urlRouterProvider, $locationProv
 });
 
 //----------------------------------------//
-appMainModule.controller("indexController", function ($scope, $http, $location) {
+applicationModule.controller("indexController", function ($scope, $http, $location) {
 
 	// Properties
 	$scope.heading = '';
@@ -101,37 +101,37 @@ appMainModule.controller("indexController", function ($scope, $http, $location) 
 });
 
 //----------------------------------------//
-appMainModule.controller("homeController", function ($scope) {
+applicationModule.controller("homeController", function ($scope) {
 	$scope.$emit('pageChange', 'Home');
 });
 
 //----------------------------------------//
-appMainModule.controller("eventsController", function ($scope) {
+applicationModule.controller("eventsController", function ($scope) {
 	$scope.$emit('pageChange', 'Events');
 });
 
 //----------------------------------------//
-appMainModule.controller("bioController", function ($scope) {
+applicationModule.controller("bioController", function ($scope) {
 	$scope.$emit('pageChange', 'Bio');
 });
 
 //----------------------------------------//
-appMainModule.controller("musicController", function ($scope) {
+applicationModule.controller("musicController", function ($scope) {
 	$scope.$emit('pageChange', 'Music');
 });
 
 //----------------------------------------//
-appMainModule.controller("photosController", function ($scope) {
+applicationModule.controller("photosController", function ($scope) {
 	$scope.$emit('pageChange', 'Photos');
 });
 
 //----------------------------------------//
-appMainModule.controller("videosController", function ($scope) {
+applicationModule.controller("videosController", function ($scope) {
 	$scope.$emit('pageChange', 'Videos');
 });
 
 //----------------------------------------//
-appMainModule.controller("contactController", function ($scope, $timeout) {
+applicationModule.controller("contactController", function ($scope, $timeout) {
 	$scope.$emit('pageChange', 'Contact');
 
 	$scope.onSend = function () {
